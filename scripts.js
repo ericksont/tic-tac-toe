@@ -4,7 +4,10 @@ let selectedWinner = document.getElementById("winner-player");
 let squares = document.getElementsByClassName("squere");
 
 function chooseSquare(id){
-    console.log("Choose Square "+id);
+
+    if(winner !== null)
+        return;
+    
     let square = document.getElementById(id);
 
     if(square.innerHTML !== '-')
@@ -102,6 +105,21 @@ function changeSquereColor(square1, square2, square3){
 function setWinner(squere){
     winner = squere.innerHTML;
     selectedWinner.innerHTML = winner;
+}
+
+function reset(){
+    winner = null;
+    selectedWinner.innerHTML = '';
+
+    for(let i = 1; i <= 9; i++) {
+        let square = document.getElementById(i);
+        square.innerHTML = '-';
+        square.style.background = '#eee';
+        square.style.color = '#eee';
+    }
+
+    changePlayer('X');
+    
 }
 
 changePlayer('X');
