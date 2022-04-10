@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/ericksont/tic-tac-toe?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/ericksont/tic-tac-toe?style=for-the-badge)
 
-<img src="/assets/images/image.png" alt="Imagem com modelo do jogo">
+<img src="image.png" alt="Imagem com modelo do jogo">
 
 > It is a game with extremely simple rules, which does not cause great difficulties for its players and is easily learned..
 
